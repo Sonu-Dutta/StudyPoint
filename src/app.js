@@ -3,7 +3,10 @@ const path = require("path");
 require("./db/conn");
 const Register = require("./models/registers");
 const app = express();
+// const dotenv = require("../../mernbackend/dotenv");
+// dotenv.config();
 const hbs = require("hbs");
+// console.log(process.env.DBHOST);
 const port = process.env.PORT || 3000;
 
 const static_path = path.join(__dirname, "../public");

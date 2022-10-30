@@ -54,7 +54,7 @@ app.post("/register", async (req, res) => {
         confirmpassword: req.body.confirmpassword,
       });
       const registered = await registerUser.save();
-      res.status(201).render("index", { var_name: "Submitted..." });
+      res.status(201).render("index.hbs", { var_name: "Submitted..." });
     } else {
       res.send("Passwords are not matching");
     }

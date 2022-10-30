@@ -1,0 +1,82 @@
+<form action="/register" method="post" class="container">
+
+  <div class="mb-3 form-group">
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      placeholder="Enter your name *"
+    />
+  </div>
+  <div class="mb-3 form-group">
+    <div class="maxl">
+      <label class="radio inline">
+        <input type="radio" name="gender" value="male" checked />
+        <span>Male</span>
+      </label>
+      <label class="radio inline">
+        <input type="radio" name="gender" value="female" />
+        <span>Female</span>
+      </label>
+
+    </div>
+  </div>
+
+  <div class="mb-3 form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter your age *"
+      name="age"
+    />
+  </div>
+
+  <div class="mb-3 form-group">
+    <input
+      type="number"
+      class="form-control"
+      name="phone"
+      placeholder="Enter your phone no. *"
+    />
+  </div>
+  <div class="mb-3 form-group">
+    <input
+      type="text"
+      class="form-control"
+      name="message"
+      placeholder="Enter your message *"
+    />
+  </div>
+
+  <div class="mb-3 form-group">
+
+    <input
+      type="email"
+      class="form-control"
+      aria-describedby="emailHelp"
+      name="email"
+      placeholder="Enter your email *"
+    />
+    <small id="emailHelp" class="form-text text-muted">We'll never share your
+      email with anyone else.</small>
+  </div>
+
+  <div class="mb-3 form-group">
+    <input
+      type="password"
+      class="form-control"
+      name="password"
+      placeholder="Enter your password *"
+    />
+  </div>
+  <div class="mb-3 form-group">
+    <input
+      type="password"
+      class="form-control"
+      name="confirmpassword"
+      placeholder="Enter your password again*"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

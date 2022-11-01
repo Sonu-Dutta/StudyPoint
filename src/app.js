@@ -32,7 +32,23 @@ app.set("views", views_path);
 hbs.registerPartials(partials_path);
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { var_name: " Please submit form..." });
+});
+
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services");
+});
+
+app.get("/page1", (req, res) => {
+  res.render("page1");
+});
+
+app.get("/page2", (req, res) => {
+  res.render("page2");
 });
 
 app.get("/register", (req, res) => {
@@ -54,7 +70,7 @@ app.post("/register", async (req, res) => {
         confirmpassword: req.body.confirmpassword,
       });
       const registered = await registerUser.save();
-      res.status(201).render("index.hbs");
+      res.status(201).render("index", { var_name: "Submitted..." });
     } else {
       res.send("Passwords are not matching");
     }
